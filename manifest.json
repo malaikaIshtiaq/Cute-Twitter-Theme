@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cute Twitter Theme",
+  "version": "0.1.0",
+  "description": "Modify CSS Of Twitter website To a Fun Cute Pink Theme",
+  "author": "Malaika Ishtiaq",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "matches": ["https://twitter.com/home"]
+    }
+  ]
+}
